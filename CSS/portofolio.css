@@ -1,131 +1,173 @@
 :root {
-    --colore-principale: #0b0c2a;
-    --colore-secondario: #fa0000;
-    --colore-terziario: #f8f4f0;
-    --bianco: #fbf8f8;
-    --nero: #0e0e0e;
+  --colore-principale: #0b0c2a;
+  --colore-secondario: #fa0000;
+  --colore-terziario: #f8f4f0;
+  --bianco: #fbf8f8;
+  --nero: #0e0e0e;
 
 }
 
 
 
-h1{
-    font-size: 4rem;
-}
 
 .sez-1 {
-    padding: 7rem 0;
-    color: rgb(255, 255, 255);
-    background: #040F21;
-background: linear-gradient(90deg, rgba(4, 15, 33, 0) 0%, rgba(4, 15, 33, 0.97) 60%);
-    backdrop-filter: blur(6px);
+  padding: 7rem 0;
+  color: rgb(255, 255, 255);
+  background: #040F21;
+  background: linear-gradient(90deg, rgba(4, 15, 33, 0) 0%, rgba(4, 15, 33, 0.97) 60%);
+  backdrop-filter: blur(6px);
 
-    position: relative;
-    z-index: 1;
-    min-height: 90vh;
+  position: relative;
+  z-index: 1;
+  min-height: 90vh;
 
 }
 
-.freccia-giu{
-    font-size: 2rem;
-padding-top: 2rem;
-}
 
 
 
 .bg-img {
-    background-image: url(../media/codice_sfondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../media/codice_sfondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
-.fontSize {
-    font-size: 4rem;
-    font-family: Doto;
-    font-weight: 600;
-    color: #021d3a;
 
-}
 
 
 body {
-      
-      min-height: 100vh;
-    }
 
-    .animation-section {
-      position: relative;
-      height: 500px;
-      /* overflow: hidden; */
-    }
-
-    .box {
-      position: absolute;
-      
-      
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    }
-
-    .box1 {
-      
-      top: 50px;
-      left: 30px;
-      animation: moveBox1 2s ease-in-out forwards;
-    }
-
-    .box2 {
-      
-      bottom: 50px;
-      right: 30px;
-      animation: moveBox2 2s ease-in-out forwards;
-    }
-
-    @keyframes moveBox1 {
-      from {
-        left: 30px;
-        top: 50px;
-      }
-      to {
-        left: calc(100% - 440px);
-        top: calc(100% - 260px);
-      }
-    }
-
-    @keyframes moveBox2 {
-      from {
-        right: 30px;
-        bottom: 50px;
-      }
-      to {
-        right: calc(100% - 440px);
-        bottom: calc(100% - 260px);
-      }
-    }
-
-    .img-animazione{
-        height: 16rem;
-        border-radius: 6px;
-        border: solid 2px var(--bianco);
-    }
-
-.img-1{
-    box-shadow:
-        0 0 5px var(--colore-secondario),
-        0 0 20px var(--colore-secondario),
-
-        inset 0 0 10px var(--colore-secondario);
-}
-.img-2{
-      box-shadow:
-        0 0 5px #0000ff,
-        0 0 20px #0000ff,
-
-        inset 0 0 10px var(--colore-secondario);
+  min-height: 100vh;
 }
 
+.animation-section {
+  position: relative;
+  height: 500px;
+  /* overflow: hidden; */
+}
+
+.box {
+  position: absolute;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box1 {
+
+  top: 0;
+  left: 0;
+  animation: moveBox1 3s ease-in-out forwards;
+}
+
+.box2 {
+
+  bottom: 0;
+  right: 0;
+  animation: moveBox2 3s ease-in-out forwards;
+}
+
+@keyframes moveBox1 {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: calc(100% - 440px);
+    top: calc(100% - 260px);
+  }
+}
+
+@keyframes moveBox2 {
+  from {
+    right: 0;
+    bottom: 0;
+  }
+
+  to {
+    right: calc(100% - 440px);
+    bottom: calc(100% - 260px);
+  }
+}
+
+.img-animazione {
+  height: 16rem;
+  border-radius: 6px;
+  border: solid 2px var(--bianco);
+}
+
+.img-1 {
+  box-shadow:
+    0 0 5px var(--colore-secondario),
+    0 0 20px var(--colore-secondario),
+
+    inset 0 0 10px var(--colore-secondario);
+}
+
+.img-2 {
+  box-shadow:
+    0 0 5px #0000ff,
+    0 0 20px #0000ff,
+
+    inset 0 0 10px var(--colore-secondario);
+}
+
+.sez-2 {
+  padding: 5rem 0;
+  color: white;
+}
+
+.card {
+  background-color: #0000ff;
+}
+
+.img-card {
+  width: 100%;
+}
+
+.card-progetti{
+  border: solid 2px #ffffff;
+  padding: 0;
+  padding-bottom: 0.7rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 600px) {
+  .img-animazione {
+  height: 10rem;
+}
+
+@keyframes moveBox1 {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: calc(100% - 290px);
+    top: calc(100% - 260px);
+  }
+}
+
+@keyframes moveBox2 {
+  from {
+    right: 0;
+    bottom: 0;
+  }
+
+  to {
+    right: calc(100% - 290px);
+    bottom: calc(100% - 250px);
+  }
+}
+}
