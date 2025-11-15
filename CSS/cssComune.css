@@ -16,284 +16,6 @@ body {
 
 }
 
-
-.logo {
-    max-width: 4rem;
-}
-
-
-
-.navbar-toggler {
-    color: var(--bianco);
-    height: 80%;
-
-}
-
-.navbar-toggler:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: solid 2px red;
-}
-
-.bi-list {
-    font-size: 1.6rem;
-
-}
-
-.nav-style {
-    background-color: rgba(0, 22, 44, 0.8) !important;
-    backdrop-filter: blur(20px);
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-    padding: 0 2rem;
-    max-height: 3rem;
-    z-index: 1000;
-}
-
-.navbar-nav {
-    align-items: center;
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    color: var(--bianco) !important;
-}
-
-.nav-link:hover {
-    color: var(--bianco) !important;
-    text-shadow:
-
-        0 0 7px #ffffff,
-
-
-        0 0 10px var(--colore-secondario),
-        0 0 20px var(--colore-secondario),
-
-
-        0 0 40px var(--colore-secondario),
-        0 0 80px var(--colore-secondario);
-    border-bottom: solid 3px var(--colore-secondario);
-}
-
-
-
-/* FOOTER E SVG */
-
-
-
-
-.instagram {
-    color: #f2556f;
-}
-
-.linkedin {
-    color: #0a66c2;
-}
-
-.whatsapp {
-    color: #0cc242;
-}
-
-
-
-
-
-footer p,
-a {
-    font-size: 15px;
-}
-
-.footer-wrap {
-    padding: 1rem 0;
-}
-
-.svg-contatti {
-    font-size: 2rem;
-}
-
-
-/* FONT E NEON */
-
-.fontSize {
-    font-size: 4rem;
-    font-family: Doto;
-    font-weight: 600;
-    color: #021d3a;
-
-}
-
-.h1-size {
-    color: #021d3a;
-    font-size: 3.5rem;
-
-}
-
-
-
-.neon {
-
-    color: var(--bianco);
-
-    text-shadow:
-
-        0 0 7px #ffb1b1,
-
-
-        0 0 10px var(--colore-secondario),
-        0 0 20px var(--colore-secondario),
-
-
-        0 0 40px var(--colore-secondario),
-        0 0 80px var(--colore-secondario);
-
-    transition: text-shadow 0.3s ease;
-
-
-}
-
-.neon:hover {
-
-    color: #FFFFFF;
-    text-shadow:
-
-        0 0 7px #ffffff,
-
-
-        0 0 25px #ff6e6e,
-        0 0 50px #ff6e6e,
-
-
-        0 0 60px #ff6e6e,
-        0 0 100px #ff6e6e,
-        0 0 250px #ff6e6e;
-
-}
-
-.neon-blu {
-    color: #cecbff;
-    text-shadow:
-
-        0 0 7px #ffffff,
-
-
-        0 0 10px blue,
-        0 0 20px blue,
-
-
-        0 0 40px blue,
-        0 0 80px blue;
-
-    transition: text-shadow 0.3s ease;
-}
-
-.neon-blu:hover {
-    color: #FFFFFF;
-    text-shadow:
-
-        0 0 7px #ffffff,
-
-
-        0 0 15px rgb(79, 79, 253),
-        0 0 30px rgb(79, 79, 253),
-
-
-        0 0 60px rgb(79, 79, 253),
-        0 0 100px rgb(79, 79, 253),
-        0 0 150px rgb(79, 79, 253);
-}
-
-h2 {
-    font-size: 3.5rem;
-    padding-top: 2rem;
-}
-
-h3 {
-    font-size: 2.8rem;
-    color: var(--bianco);
-}
-
-h4 {
-    color: var(--bianco);
-}
-
-h5 {
-    color: var(--bianco);
-}
-
-p {
-    font-size: 1.5rem;
-    color: var(--bianco);
-}
-
-
-
-
-
-@media (min-width: 600px) and (max-width: 991px) {
-    #navbarNavDropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 0.5rem;
-        padding: 1rem;
-        background-color: rgba(0, 22, 44, 1) !important;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .navbar>.container {
-        position: relative;
-    }
-
-    .bg-img {
-        background-attachment: initial;
-    }
-
-
-
-}
-
-
-
-
-
-@media (max-width: 600px) {
-
-
-    .bg-img {
-        background-attachment: initial;
-    }
-
-
-
-    h2 {
-        font-size: 2.1rem;
-    }
-
-    /* SEZONE CALENDARIO */
-
-
-    #navbarNavDropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 0.5rem;
-        padding: 1rem;
-        background-color: rgba(0, 22, 44, 1) !important;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .navbar>.container {
-        position: relative;
-    }
-
-}
-
-
-
-
 /* BOTTONE ANIMATO */
 
 
@@ -382,4 +104,282 @@ p {
 
 
 /* FINE BOTTONE ANIMATO */
+
+
+.logo {
+    max-width: 4rem;
+}    
+
+
+
+.navbar-toggler {
+    color: var(--bianco);
+    height: 80%;
+
+}    
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: solid 2px red;
+}    
+
+.bi-list {
+    font-size: 1.6rem;
+
+}    
+
+.nav-style {
+    background-color: rgba(0, 22, 44, 0.8) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    padding: 0 2rem;
+    max-height: 3rem;
+    z-index: 1000;
+}    
+
+.navbar-nav {
+    align-items: center;
+}    
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--bianco) !important;
+}    
+
+.nav-link:hover {
+    color: var(--bianco) !important;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px var(--colore-secondario),
+        0 0 20px var(--colore-secondario),
+
+
+        0 0 40px var(--colore-secondario),
+        0 0 80px var(--colore-secondario);
+    border-bottom: solid 3px var(--colore-secondario);    
+}    
+
+
+
+/* FOOTER E SVG */
+
+
+
+
+.instagram {
+    color: #f2556f;
+}    
+
+.linkedin {
+    color: #0a66c2;
+}    
+
+.whatsapp {
+    color: #0cc242;
+}    
+
+
+
+
+
+footer p,
+a {
+    font-size: 15px;
+}    
+
+.footer-wrap {
+    padding: 1rem 0;
+}    
+
+.svg-contatti {
+    font-size: 2rem;
+}    
+
+
+/* FONT E NEON */
+
+.fontSize {
+    font-size: 4rem;
+    font-family: Doto;
+    font-weight: 600;
+    color: #021d3a;
+
+}    
+
+.h1-size {
+    color: #021d3a;
+    font-size: 3.5rem;
+
+}    
+
+
+
+.neon {
+
+    color: var(--bianco);
+
+    text-shadow:
+
+        0 0 7px #ffb1b1,
+
+
+        0 0 10px var(--colore-secondario),
+        0 0 20px var(--colore-secondario),
+
+
+        0 0 40px var(--colore-secondario),
+        0 0 80px var(--colore-secondario);
+
+    transition: text-shadow 0.3s ease;    
+
+
+}    
+
+.neon:hover {
+
+    color: #FFFFFF;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 25px #ff6e6e,
+        0 0 50px #ff6e6e,
+
+
+        0 0 60px #ff6e6e,
+        0 0 100px #ff6e6e,
+        0 0 250px #ff6e6e;
+
+}        
+
+.neon-blu {
+    color: #cecbff;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 10px blue,
+        0 0 20px blue,
+
+
+        0 0 40px blue,
+        0 0 80px blue;
+
+    transition: text-shadow 0.3s ease;    
+}    
+
+.neon-blu:hover {
+    color: #FFFFFF;
+    text-shadow:
+
+        0 0 7px #ffffff,
+
+
+        0 0 15px rgb(79, 79, 253),
+        0 0 30px rgb(79, 79, 253),
+
+
+        0 0 60px rgb(79, 79, 253),
+        0 0 100px rgb(79, 79, 253),
+        0 0 150px rgb(79, 79, 253);
+}        
+
+h2 {
+    font-size: 3.5rem;
+    padding-top: 2rem;
+}    
+
+h3 {
+    font-size: 2.8rem;
+    color: var(--bianco);
+}    
+
+h4 {
+    color: var(--bianco);
+}    
+
+h5 {
+    color: var(--bianco);
+}    
+
+p {
+    font-size: 1.5rem;
+    color: var(--bianco);
+}    
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 991px) {
+    #navbarNavDropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        background-color: rgba(0, 22, 44, 1) !important;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }    
+
+    .navbar>.container {
+        position: relative;
+    }    
+
+    .bg-img {
+        background-attachment: initial;
+    }    
+
+
+
+}    
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .bg-img {
+        background-attachment: initial;
+    }    
+
+
+
+    h2 {
+        font-size: 2.1rem;
+    }    
+
+    /* SEZONE CALENDARIO */
+
+
+    #navbarNavDropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        background-color: rgba(0, 22, 44, 1) !important;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }    
+
+    .navbar>.container {
+        position: relative;
+    }    
+
+}    
+
+
+
 
