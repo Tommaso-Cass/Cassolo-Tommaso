@@ -224,8 +224,8 @@ body {
 }
 
 .tech-utilizzate{
-  background: none;
-  border: none;
+  background: none !important;
+  border: none !important;
 }
 
 .popover {
