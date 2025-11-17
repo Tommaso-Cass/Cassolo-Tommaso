@@ -70,7 +70,7 @@ body {
     background: #15345f;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @keyframes glowing {
@@ -96,7 +96,7 @@ body {
     background-image: linear-gradient(45deg, #FF0000, #AE0051, #6F0090, #3D00C2, #0000FF, #2900D6, #74008B, #B0004F, #ff0000);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    
     transition: color 0.3s ease-in-out;
     background-size: 400%;
     animation: glowing 20s linear infinite;
