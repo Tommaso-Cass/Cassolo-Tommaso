@@ -1,15 +1,19 @@
+
+
+
 document.addEventListener("DOMContentLoaded", creaTitolo);
 
 document.addEventListener("DOMContentLoaded", function(){
     const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl, {
-
+            
             trigger: 'hover focus'
         });
-
+        
     });
 })
+
 
 
 let l1 = document.querySelector("#l1");
@@ -49,8 +53,8 @@ let p12 = document.querySelector("#p12");
 let p13 = document.querySelector("#p13");
 
 function creaTitolo() {
-
-
+    
+    
     setTimeout(() => { l1.classList.add("neon-blu"); }, 2300);
     setTimeout(() => { l2.classList.add("neon-blu"); }, 2000);
     setTimeout(() => { l3.classList.add("neon-blu"); }, 1700);
@@ -65,15 +69,15 @@ function creaTitolo() {
     setTimeout(() => { l12.classList.add("neon-blu"); }, 1700);
     setTimeout(() => { l13.classList.add("neon-blu"); }, 2000);
     setTimeout(() => { l14.classList.add("neon-blu"); }, 2300);
-
-
-
-
+    
+    
+    
+    
     setTimeout(() => {
         neonBlu.forEach(elemento => elemento.classList.add("neon"));
     }, 2600);
-
-
+    
+    
     setTimeout(() => { p1.classList.add("neon"); }, 500);
     setTimeout(() => { p2.classList.add("neon"); }, 700);
     setTimeout(() => { p3.classList.add("neon"); }, 900);
@@ -88,7 +92,7 @@ function creaTitolo() {
     setTimeout(() => { p12.classList.add("neon"); }, 2700);
     setTimeout(() => { p13.classList.add("neon"); }, 2900);
     
-
+    
 }
 
 
@@ -103,18 +107,18 @@ let svgEnvelope = document.querySelector("#svg-envelope");
 
 
 form.addEventListener('submit', function (event) {
-
-
+    
+    
     event.preventDefault();
-
-
+    
+    
     submitButton.disabled = true;
-
-
-
+    
+    
+    
     let data = new FormData(form);
-
-
+    
+    
     fetch(form.action, {
         method: form.method,
         body: data,
@@ -122,8 +126,8 @@ form.addEventListener('submit', function (event) {
             'Accept': 'application/json'
         }
     })
-        .then(response => {
-
+    .then(response => {
+        
             if (response.ok) {
 
                 scrittaStatus.textContent = "Messaggio inviato!";
@@ -136,9 +140,9 @@ form.addEventListener('submit', function (event) {
                 }, 5000);
                 form.reset();
 
-
+                
             } else {
-
+                
                 scrittaStatus.textContent = "Errore nell'invio del messagio, prova più tardi!";
                 svgEnvelope.classList.add("bi", "bi-envelope-exclamation");
                 statusDiv.classList.add("status-error");
@@ -151,27 +155,27 @@ form.addEventListener('submit', function (event) {
             }
         })
         .catch(error => {
-
+            
             scrittaStatus.textContent = "Errore di rete!";
-                svgEnvelope.classList.add("bi", "bi-envelope-exclamation");
-                statusDiv.classList.add("status-error");
-                setTimeout(() => {
-                    statusDiv.classList.remove("status-error");
-                    scrittaStatus.textContent = "";
-                    svgEnvelope.classList.remove("bi", "bi-envelope-exclamation");
-                }, 5000);
-                
+            svgEnvelope.classList.add("bi", "bi-envelope-exclamation");
+            statusDiv.classList.add("status-error");
+            setTimeout(() => {
+                statusDiv.classList.remove("status-error");
+                scrittaStatus.textContent = "";
+                svgEnvelope.classList.remove("bi", "bi-envelope-exclamation");
+            }, 5000);
+            
         })
-
+        
         .finally(() => {
-
+            
             submitButton.disabled = false;
-
+            
         });
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
     });
